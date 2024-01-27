@@ -1,0 +1,32 @@
+{
+  "name": "playwrightcucumbertemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs",
+    "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs --parallel 3 ",
+    "debug": "node --inspect-brk node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@myTags` ",
+    "reporte": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js --tags=@myTagss",
+    "reporter": "node reporter.js"
+  },
+  "author": "Camilo Posada",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.10.0",
+    "allure-commandline": "^2.20.1",
+    "chai": "^4.3.7",
+    "cucumber-html-reporter": "^5.5.0",
+    "playwright": "^1.30.0",
+    "prettier": "^2.8.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.11.5",
+    "allure-cucumberjs": "^2.0.0-beta.25",
+    "allure-js-commons": "^2.0.0-beta.25",
+    "allure-playwright": "^2.0.0-beta.25",
+    "cucumberjs-parallel": "^2.0.2",
+    "jest-allure": "^0.1.3"
+  }
+}

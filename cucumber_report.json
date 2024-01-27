@@ -1,0 +1,55 @@
+[
+  {
+    "description": "As a user\nI want to login into applications",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-actions;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1895051713
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I visit a login page",
+            "match": {
+              "location": "stepDefinitions/form-steps.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1211651
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@debugs",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-actions",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login actions",
+    "tags": [
+      {
+        "name": "@debugs",
+        "line": 1
+      }
+    ],
+    "uri": "features/Basics/loginPage.feature"
+  }
+]
