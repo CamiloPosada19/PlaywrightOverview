@@ -4,52 +4,52 @@
     "elements": [
       {
         "description": "",
-        "id": "login-actions;login-with-valid-credentials",
+        "id": "basic-actions;basic-actions-with-different-selectors",
         "keyword": "Scenario",
         "line": 7,
-        "name": "Login with valid credentials",
+        "name": "Basic actions with different selectors",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1895051713
+              "duration": 1510432368
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "I visit a login page",
+            "name": "I as a user enter the website",
             "match": {
-              "location": "stepDefinitions/form-steps.js:3"
+              "location": "stepDefinitions/BasicFeatureSteps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1211651
+              "duration": 2556172370
             }
           }
         ],
         "tags": [
           {
-            "name": "@debugs",
+            "name": "@basics",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "login-actions",
+    "id": "basic-actions",
     "line": 2,
     "keyword": "Feature",
-    "name": "Login actions",
+    "name": "Basic actions",
     "tags": [
       {
-        "name": "@debugs",
+        "name": "@basics",
         "line": 1
       }
     ],
-    "uri": "features/Basics/loginPage.feature"
+    "uri": "features/Basics/BasicFeature.feature"
   }
 ]

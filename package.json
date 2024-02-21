@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type":"commonjs",
+
+
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs",
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@basics ",
     "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs --parallel 3 ",
     "debug": "node --inspect-brk node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@myTags` ",
-    "reporte": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js --tags=@myTagss",
+    "reporte": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js --tags=@basics",
     "reporter": "node reporter.js"
   },
   "author": "Camilo Posada",
@@ -17,12 +20,16 @@
     "allure-commandline": "^2.20.1",
     "chai": "^4.3.7",
     "cucumber-html-reporter": "^5.5.0",
+    "dotenv": "^16.4.1",
     "playwright": "^1.30.0",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
     "@playwright/test": "^1.41.1",
     "@types/node": "^20.11.5",
+    "@wdio/cli": "^8.29.7",
     "allure-cucumberjs": "^2.0.0-beta.25",
     "allure-js-commons": "^2.0.0-beta.25",
     "allure-playwright": "^2.0.0-beta.25",
