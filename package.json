@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"commonjs",
-
-
+  "type": "commonjs",
   "scripts": {
     "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@basics ",
     "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs --parallel 3 ",
@@ -16,13 +14,13 @@
   "author": "Camilo Posada",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^8.10.0",
+    "@cucumber/cucumber": "^10.3.1",
     "allure-commandline": "^2.20.1",
     "chai": "^4.3.7",
-    "cucumber-html-reporter": "^5.5.0",
+    "cucumber-html-reporter": "^6.0.0",
     "dotenv": "^16.4.1",
-    "playwright": "^1.30.0",
-    "prettier": "^2.8.3",
+    "playwright": "^1.40.0",
+    "prettier": "^3.2.5",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
