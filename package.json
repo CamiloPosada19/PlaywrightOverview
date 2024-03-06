@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@basics ",
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@actions ",
     "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs --parallel 3 ",
     "debug": "node --inspect-brk node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@myTags` ",
     "reporte": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js --tags=@basics",
