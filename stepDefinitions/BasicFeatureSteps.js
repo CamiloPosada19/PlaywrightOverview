@@ -19,6 +19,9 @@ Given("I as a user enter the website {string}", async function (environment) {
     case ("components"):
       await page.goto(process.env.URLCOMPONENTS)
       break;
+    case ("tooltips"):
+      await page.goto(process.env.URLTOOLTIPS)
+      break;
     default:
       console.log("page not recognized")
 

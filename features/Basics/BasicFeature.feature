@@ -1,4 +1,5 @@
 @basics
+@all
 Feature: Basic actions
 
 	I as a user want to use the different selectors of playwright
