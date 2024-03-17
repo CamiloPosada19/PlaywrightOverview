@@ -1,333 +1,78 @@
 [
   {
-    "description": "    I as a user want to perform the daily actions of a user and verify it.",
+    "description": "   As a user, I add an item to the shopping cart, verify that it is there and delete it.",
     "elements": [
       {
         "description": "",
-        "id": "main-actions-with-playwright;user-selects-checkboxes",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "User selects checkboxes",
+        "id": "pom-application-with-js;",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1782073104
+              "duration": 2042349359
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 7,
+            "name": "I as a user enter the website \"ecommerce\"",
+            "match": {
+              "location": "stepDefinitions/BasicFeatureSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2513140657
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 8,
-            "name": "I as a user enter the website \"components\"",
+            "name": "I add a random item from the main page",
             "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
+              "location": "stepDefinitions/PageObjectModelSteps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 3113155926
+              "duration": 10420674
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 9,
-            "name": "I click on the \"male\" checkbox",
+            "name": "I verify that it is displayed on the cart page",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:6"
+              "location": "stepDefinitions/PageObjectModelSteps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 95638535
+              "duration": 555671
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 10,
-            "name": "I confirm that the checkbox corresponding to \"male\" is selected.",
+            "name": "I remove the item from the cart",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:21"
+              "location": "stepDefinitions/PageObjectModelSteps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 13082547
+              "duration": 2715472
             }
           }
         ],
         "tags": [
           {
-            "name": "@actions",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "main-actions-with-playwright;user-selects-checkboxes",
-        "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "User selects checkboxes",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 365125459
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I as a user enter the website \"components\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1800520685
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I click on the \"female\" checkbox",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 90573767
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I confirm that the checkbox corresponding to \"female\" is selected.",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10021150
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@actions",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "main-actions-with-playwright;perform-the-hover-and-verify-that-the-tooltip-is-visible.",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Perform the hover and verify that the tooltip is visible.",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 375838135
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "I as a user enter the website \"tooltips\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2301331932
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "Mouse over the green button",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 225765422
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "A tooltip containing the following text \"You hovered over the Button\" is displayed",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 366327731
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@actions",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "main-actions-with-playwright;i-as-a-user-perform-a-drag-and-drop",
-        "keyword": "Scenario",
-        "line": 24,
-        "name": "I as a user perform a drag and drop",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 502514299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 25,
-            "name": "I as a user enter the website \"components\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2407091346
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "I drag the element to the box",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 199794072
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "Verify that the item is in the yellow box",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5260434
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@actions",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "main-actions-with-playwright;perform-a-search-and-verify-that-all-the-results-contain-the-searched-word",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Perform a search and verify that all the results contain the searched word",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 410004950
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 31,
-            "name": "I as a user enter the website \"components\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1605213932
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "I perform a random text search",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 144202102
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "I verify that all the results contain the searched text",
-            "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 368982343
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@actions",
+            "name": "@POM",
             "line": 1
           },
           {
@@ -338,13 +83,13 @@
         "type": "scenario"
       }
     ],
-    "id": "main-actions-with-playwright",
+    "id": "pom-application-with-js",
     "line": 3,
     "keyword": "Feature",
-    "name": "Main Actions with playwright",
+    "name": "POM application with js",
     "tags": [
       {
-        "name": "@actions",
+        "name": "@POM",
         "line": 1
       },
       {
@@ -352,199 +97,6 @@
         "line": 2
       }
     ],
-    "uri": "features/Basics/Actions.feature"
-  },
-  {
-    "description": "\tI as a user want to use the different selectors of playwright",
-    "elements": [
-      {
-        "description": "",
-        "id": "basic-actions;basic-actions-with-different-selectors",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Basic actions with different selectors",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 432950118
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I as a user enter the website \"ecommerce\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1056592444
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I verify and type on an element with ID",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 32802756
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I click and type on an element with Class",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 68027987
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I click and type on an element with XPath",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 597567278
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I verify that the actions are performed correctly",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 54935582
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@basics",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "basic-actions;specialized-playwright-locators",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Specialized playwright locators",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 420267811
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I as a user enter the website \"ecommerce\"",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 766150352
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I as user click in laptop with getByRole",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 132040394
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "Click on an element by text",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1165133359
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I check the element with text",
-            "match": {
-              "location": "stepDefinitions/BasicFeatureSteps.js:65"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 952196012
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@basics",
-            "line": 1
-          },
-          {
-            "name": "@all",
-            "line": 2
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "basic-actions",
-    "line": 3,
-    "keyword": "Feature",
-    "name": "Basic actions",
-    "tags": [
-      {
-        "name": "@basics",
-        "line": 1
-      },
-      {
-        "name": "@all",
-        "line": 2
-      }
-    ],
-    "uri": "features/Basics/BasicFeature.feature"
+    "uri": "features/E2E/PageObjecModel.feature"
   }
 ]
