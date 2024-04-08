@@ -1,11 +1,10 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { faker, NameModule } = require('@faker-js/faker');
-//const { expect } = require('chai');
+const { faker } = require('@faker-js/faker');
 const { expect } = require('@playwright/test');
-const  { ArticlePage } = require("../../PlaywrightOverview/pages/ArticlesPage")
-const  { CartPage } = require("../../PlaywrightOverview/pages/CartPage")
-const articlePage = new ArticlePage()
-const cartPage = new CartPage();
+
+const  { PageObjectManager } = require("../../PlaywrightOverview/pages/PageObjectManager")
+const pm = new PageObjectManager()
+
 objectData = {
   randomName: faker.person.firstName(),
   randomEmail: faker.internet.email(),
@@ -14,16 +13,22 @@ objectData = {
 
 When('I add a random item from the main page', async function () {
     // Write code here that turns the phrase above into concrete actions
-    articlePage.method1()
-    cartPage.method1()
+    await pm.articlePage.selectARandomElement()
+    await pm.articlePage.goTotheCart()
+
+  
+
   });
 
   Then('I verify that it is displayed on the cart page', async function () {
-    // Write code here that turns the phrase above into concrete actions
-    console.log("testeando.. ")
+   await pm.cartPage.verifyItemInAcart();
+    
   });
 
   Then('I remove the item from the cart', async function () {
     // Write code here that turns the phrase above into concrete actions
-    console.log("testeando.. ")
+    // await page.locator("(//a[@href='#'][contains(.,'Delete')])").click()
+    // const table = page.locator("(//tr[@class='success'])")
+    // await expect(table).toBeHidden(); 
+    await pm.cartPage.deleteItemInCart()
   });

@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@POM",
-    "alltest": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@all",
-    "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debugs --parallel 3 ",
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@debug",
+    "alltest": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@all --retry 1",
+    "testParallel": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@all --retry 1 --parallel 2 ",
     "debug": "node --inspect-brk node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js -f json:cucumber_report.json --publish-quiet --tags=@myTags` ",
     "reporte": "./node_modules/.bin/cucumber-js --require cucumber.js --require stepDefinitions/**/*.js --tags=@basics",
     "reporter": "node reporter.js"
@@ -15,12 +15,12 @@
   "author": "Camilo Posada",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^10.3.1",
-    "allure-commandline": "^2.20.1",
+    "@cucumber/cucumber": "^10.3.2",
+    "allure-commandline": "^2.27.0",
     "chai": "^4.3.7",
     "cucumber-html-reporter": "^6.0.0",
     "dotenv": "^16.4.1",
-    "playwright": "^1.40.0",
+    "playwright": "^1.43.0",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2"
   },

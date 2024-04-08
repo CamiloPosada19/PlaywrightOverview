@@ -11,7 +11,7 @@ BeforeAll(async () => {
         headless: false,
         retries: 2,
         reporter: 'html',
-        baseURL: "https://demoqa.com"
+        baseURL: "https://demoqa.com",
         
       },
     
