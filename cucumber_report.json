@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1782073104
+              "duration": 509177584
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3113155926
+              "duration": 2133254042
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95638535
+              "duration": 81019749
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13082547
+              "duration": 8395625
             }
           }
         ],
@@ -81,7 +81,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 365125459
+              "duration": 503166000
             }
           },
           {
@@ -94,7 +94,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1800520685
+              "duration": 3938255250
             }
           },
           {
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90573767
+              "duration": 67089791
             }
           },
           {
@@ -120,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10021150
+              "duration": 6625584
             }
           }
         ],
@@ -148,7 +148,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 375838135
+              "duration": 125218999
             }
           },
           {
@@ -161,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2301331932
+              "duration": 1896390041
             }
           },
           {
@@ -174,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225765422
+              "duration": 44693667
             }
           },
           {
@@ -187,7 +187,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 366327731
+              "duration": 371551332
             }
           }
         ],
@@ -199,6 +199,10 @@
           {
             "name": "@all",
             "line": 2
+          },
+          {
+            "name": "@debug",
+            "line": 16
           }
         ],
         "type": "scenario"
@@ -215,7 +219,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 502514299
+              "duration": 121596750
             }
           },
           {
@@ -228,7 +232,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2407091346
+              "duration": 2557017417
             }
           },
           {
@@ -237,11 +241,11 @@
             "line": 26,
             "name": "I drag the element to the box",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:46"
+              "location": "stepDefinitions/ActionsFeatureSteps.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 199794072
+              "duration": 161744290
             }
           },
           {
@@ -250,11 +254,11 @@
             "line": 27,
             "name": "Verify that the item is in the yellow box",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:52"
+              "location": "stepDefinitions/ActionsFeatureSteps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 5260434
+              "duration": 2843791
             }
           }
         ],
@@ -282,7 +286,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 410004950
+              "duration": 166078916
             }
           },
           {
@@ -295,7 +299,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1605213932
+              "duration": 2422271374
             }
           },
           {
@@ -304,11 +308,11 @@
             "line": 32,
             "name": "I perform a random text search",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:59"
+              "location": "stepDefinitions/ActionsFeatureSteps.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 144202102
+              "duration": 86025958
             }
           },
           {
@@ -317,11 +321,11 @@
             "line": 33,
             "name": "I verify that all the results contain the searched text",
             "match": {
-              "location": "stepDefinitions/ActionsFeatureSteps.js:68"
+              "location": "stepDefinitions/ActionsFeatureSteps.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 368982343
+              "duration": 311800208
             }
           }
         ],
@@ -333,6 +337,10 @@
           {
             "name": "@all",
             "line": 2
+          },
+          {
+            "name": "@prueba",
+            "line": 29
           }
         ],
         "type": "scenario"
@@ -369,7 +377,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 432950118
+              "duration": 143360458
             }
           },
           {
@@ -382,7 +390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1056592444
+              "duration": 769477124
             }
           },
           {
@@ -395,7 +403,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32802756
+              "duration": 39161625
             }
           },
           {
@@ -408,7 +416,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68027987
+              "duration": 77300333
             }
           },
           {
@@ -421,7 +429,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 597567278
+              "duration": 588504500
             }
           },
           {
@@ -434,7 +442,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54935582
+              "duration": 40756000
             }
           }
         ],
@@ -462,7 +470,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 420267811
+              "duration": 137372917
             }
           },
           {
@@ -475,7 +483,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 766150352
+              "duration": 861668541
             }
           },
           {
@@ -488,7 +496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 132040394
+              "duration": 100571167
             }
           },
           {
@@ -501,7 +509,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1165133359
+              "duration": 1066020042
             }
           },
           {
@@ -514,7 +522,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 952196012
+              "duration": 907884874
             }
           }
         ],
@@ -546,5 +554,105 @@
       }
     ],
     "uri": "features/Basics/BasicFeature.feature"
+  },
+  {
+    "description": "   As a user, I add an item to the shopping cart, verify that it is there and delete it.",
+    "elements": [
+      {
+        "description": "",
+        "id": "pom-application-with-js;",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125801124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I as a user enter the website \"ecommerce\"",
+            "match": {
+              "location": "stepDefinitions/BasicFeatureSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 769145833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add a random item from the main page",
+            "match": {
+              "location": "stepDefinitions/PageObjectModelSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2610428208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I verify that it is displayed on the cart page",
+            "match": {
+              "location": "stepDefinitions/PageObjectModelSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 885326749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I remove the item from the cart",
+            "match": {
+              "location": "stepDefinitions/PageObjectModelSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 939550041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@POM",
+            "line": 1
+          },
+          {
+            "name": "@all",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "pom-application-with-js",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "POM application with js",
+    "tags": [
+      {
+        "name": "@POM",
+        "line": 1
+      },
+      {
+        "name": "@all",
+        "line": 2
+      }
+    ],
+    "uri": "features/E2E/PageObjecModel.feature"
   }
 ]

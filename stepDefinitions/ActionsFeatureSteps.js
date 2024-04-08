@@ -34,11 +34,10 @@ When('Mouse over the green button', async function () {
 
 
 Then('A tooltip containing the following text {string} is displayed', async function (text) {
-  await page.waitForSelector('.tooltip-inner');
-  await expect(page.locator(".tooltip-inner")).toContainText(text)
-  // Write code here that turns the phrase above into concrete actions
-  await expect(page.locator(".tooltip-inner")).toBeVisible()
-  // console.log(await page.locator(".tooltip-inner").isVisible())
+  await page.waitForSelector('div.tooltip-inner',{timeout:10000});
+  await expect(page.locator("div.tooltip-inner")).toContainText(text,({timeout:10000}))
+  await expect(page.locator("div.tooltip-inner")).toBeVisible({timeout:15000})
+
 });
 
 
@@ -67,9 +66,9 @@ When('I perform a random text search', async function () {
 
 Then('I verify that all the results contain the searched text', async function () {
   await page.waitForSelector("div#wikipedia-search-result-link")
-  const result = await page.locator("div#wikipedia-search-result-link").count()
+  const result = await page.locator("div#wikipedia-search-result-link").count({timeout:10000})
   for (let i = 0; i <result; i++) {
-    await expect(page.locator("div#wikipedia-search-result-link").nth(i)).toContainText(randomData);
+    await expect(page.locator("div#wikipedia-search-result-link").nth(i)).toContainText(randomData,{expect:10000});
 
   }
 

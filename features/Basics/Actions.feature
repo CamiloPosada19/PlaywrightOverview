@@ -13,7 +13,7 @@ Feature: Main Actions with playwright
             | typeCheckbox | expectedResult |
             | male         | male           |
             | female       | female         |
-
+  
     Scenario: Perform the hover and verify that the tooltip is visible.
         Given I as a user enter the website "tooltips"
         When Mouse over the green button
