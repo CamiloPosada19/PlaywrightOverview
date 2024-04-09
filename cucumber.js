@@ -1,3 +1,4 @@
+
 const common = `
     --require setup/assertions.js
     --require setup/hooks.js
@@ -5,4 +6,5 @@ const common = `
 `
 module.exports = {
   default: `${common} features/**/*.feature`,
+  
 }
