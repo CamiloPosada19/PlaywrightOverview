@@ -31,10 +31,11 @@ Prerequisites
 Before running the tests, make sure you have installed Node.js and the necessary dependencies, which you can install using the following command:
 
 ```bash
+
+  # Install the dependencies
+    npm i
   # Install the browser
    npx playwright install
-  # Install the dependencies
-    npm i 
   # Execute the test
   npm run alltest
   # Create report
