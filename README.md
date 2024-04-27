@@ -16,7 +16,7 @@ This repository provides an overview of how to use Playwright to automate testin
 
 ## Faker.js
 
-[Faker.js](https://github.com/Marak/Faker.js) is a library for generating realistic fake data for use in testing and software development. With Faker.js, you can easily generate names, addresses, phone numbers, email addresses, and other types of data to simulate real-world scenarios in your automated tests or in your application during development.
+[Faker.js](https://github.com/faker-js/faker) is a library for generating realistic fake data for use in testing and software development. With Faker.js, you can easily generate names, addresses, phone numbers, email addresses, and other types of data to simulate real-world scenarios in your automated tests or in your application during development.
 
 ## dotenv
 
