@@ -28,6 +28,16 @@ This repository provides an overview of how to use Playwright to automate testin
 Prerequisites
 --------------
 
+
+[![NodeJs](https://img.shields.io/badge/-NodeJS-grey?logo=node.js)](https://nodejs.org/en/download/)
+[![VSCode](https://img.shields.io/badge/-Visual%20Studio%20Code-%233178C6?logo=visual-studio-code)](https://code.visualstudio.com/download)
+
+#### Clone Repository
+```bash
+git clone https://github.com/CamiloPosada19/PlaywrightOverview.git
+```
+-----
+
 Before running the tests, make sure you have installed Node.js and the necessary dependencies, which you can install using the following command:
 
 ```bash
@@ -147,24 +157,22 @@ const { test, expect } = require('@playwright/test');
 
 class SomePage {
     constructor() {
-        // Define los selectores y elementos de la página
+     
         this.someElement = "//selector/del/elemento";
         this.anotherElement = "//selector/de/otro/elemento";
     }
 
-    // Método para realizar una acción específica en SomePage
+
     async performSomeAction() {
-        // Acción específica que se realiza en SomePage
         await page.locator(this.someElement).click();
-        // Realizar más acciones si es necesario
     }
 
-    // Método para verificar algo en SomePage
+   
     async verifySomething() {
-        // Verificación específica que se realiza en SomePage
+      
         const element = page.locator(this.someElement);
         await expect(element).toHaveAttribute('attributeName', 'expectedValue');
-        // Realizar más verificaciones si es necesario
+        
     }
 }
 
